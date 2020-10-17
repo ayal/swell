@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/swell/static/css/main.6a1506c1.chunk.css",
+    "main.css": "/swell/static/css/main.180d2261.chunk.css",
     "main.js": "/swell/static/js/main.74826175.chunk.js",
     "main.js.map": "/swell/static/js/main.74826175.chunk.js.map",
     "runtime-main.js": "/swell/static/js/runtime-main.5128ed24.js",
@@ -8,15 +8,15 @@
     "static/js/2.1c77fb3e.chunk.js": "/swell/static/js/2.1c77fb3e.chunk.js",
     "static/js/2.1c77fb3e.chunk.js.map": "/swell/static/js/2.1c77fb3e.chunk.js.map",
     "index.html": "/swell/index.html",
-    "precache-manifest.bfc75b97e38dd95a9f05225397b54201.js": "/swell/precache-manifest.bfc75b97e38dd95a9f05225397b54201.js",
+    "precache-manifest.a3271c59a23be35e22f1bf3c87d3954c.js": "/swell/precache-manifest.a3271c59a23be35e22f1bf3c87d3954c.js",
     "service-worker.js": "/swell/service-worker.js",
-    "static/css/main.6a1506c1.chunk.css.map": "/swell/static/css/main.6a1506c1.chunk.css.map",
-    "static/js/2.1c77fb3e.chunk.js.LICENSE": "/swell/static/js/2.1c77fb3e.chunk.js.LICENSE"
+    "static/css/main.180d2261.chunk.css.map": "/swell/static/css/main.180d2261.chunk.css.map",
+    "static/js/2.1c77fb3e.chunk.js.LICENSE.txt": "/swell/static/js/2.1c77fb3e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5128ed24.js",
     "static/js/2.1c77fb3e.chunk.js",
-    "static/css/main.6a1506c1.chunk.css",
+    "static/css/main.180d2261.chunk.css",
     "static/js/main.74826175.chunk.js"
   ]
 }

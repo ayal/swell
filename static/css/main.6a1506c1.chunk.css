@@ -1,2 +1,0 @@
-.App,body,html{display:flex;height:100%;width:100%;flex-direction:column;color:#7f7f7f}.App{font-family:sans-serif;text-align:center;font-size:14px;align-items:center}div{display:flex}.day-data{flex-direction:column;background:pink;margin:2px;padding:5px;height:100px;width:200px}.time-data{flex-direction:row;justify-content:space-between;font-size:13px}.day-times{flex-direction:column;padding:8px}.nowind{background:#bee2be}.noswell{background:#e0ffe0}.nowind.noswell{background:#40e0d0}
-/*# sourceMappingURL=main.6a1506c1.chunk.css.map */

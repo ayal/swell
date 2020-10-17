@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d1cfbd992d9fe095fe6bd4331be2c10",
+    "revision": "6986f877065763358079c2b55624313d",
     "url": "/swell/index.html"
   },
   {
-    "revision": "8c20319002996dab5f76",
-    "url": "/swell/static/css/main.6a1506c1.chunk.css"
+    "revision": "5291a7955503598bd7e1",
+    "url": "/swell/static/css/main.180d2261.chunk.css"
   },
   {
     "revision": "7a7aea1b779a097d2ce4",
     "url": "/swell/static/js/2.1c77fb3e.chunk.js"
   },
   {
-    "revision": "f0ad72fb0c1c1e4a268423d8869404c9",
-    "url": "/swell/static/js/2.1c77fb3e.chunk.js.LICENSE"
+    "revision": "c53f65871ab74006a0c4e0b92b224267",
+    "url": "/swell/static/js/2.1c77fb3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c20319002996dab5f76",
+    "revision": "5291a7955503598bd7e1",
     "url": "/swell/static/js/main.74826175.chunk.js"
   },
   {
