@@ -1,6 +1,6 @@
 import moment from "moment";
 import * as React from "react";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./styles.css";
 
 interface IWind {
@@ -28,6 +28,37 @@ interface DayTime {
 interface DayData {
   cal: string;
   values: DayTime[];
+  key: string;
+}
+
+const windStr = (v: number) => {
+  if (v > 15) {
+    return '+++'
+  }
+  if (v > 9) {
+    return ' ++'
+  }
+  if (v <= 9) {
+    return '  +'
+  }
+  if (v <= 5) {
+    return '  -'
+  }
+}
+
+const swellStr = (v: number) => {
+  if (v > 1) {
+    return '+++'
+  }
+  if (v > 0.3) {
+    return ' ++'
+  }
+  if (v <= 0.3) {
+    return '  +'
+  }
+  if (v <= 0.1) {
+    return ' -'
+  }
 }
 
 const DayTimeData = ({ localTimestamp, wind, swell }: DayTime) => {
@@ -38,8 +69,8 @@ const DayTimeData = ({ localTimestamp, wind, swell }: DayTime) => {
   return (
     <div className={`time-data ${windclass} ${swellclass}`}>
       <div>{date.format("HH:mm")}</div>
-      <div>Wind: {wind.speed.toString().padStart(2, "0")}</div>
-      <div>Swell: {swell.components.combined.height.toFixed(1)}</div>
+      <div>{`Wind: ${windStr(wind.speed)}`}</div>
+      <div>{`Swell: ${swellStr(swell.components.combined.height)}`}</div>
     </div>
   );
 };
@@ -50,7 +81,7 @@ const DayData = ({ cal, values }: DayData) => {
       <div>{cal}</div>
       <div className="day-times">
         {values.map((x) => {
-          return <DayTimeData {...x} />;
+          return <DayTimeData key={x.localTimestamp.toString()} {...x} />;
         })}
       </div>
     </div>
@@ -59,7 +90,7 @@ const DayData = ({ cal, values }: DayData) => {
 
 export default function App() {
   const [data, setData] = React.useState<DayData[]>([]);
-  
+
   useEffect(() => {
     const load = async () => {
       const res = await fetch("https://plattta.com/_functions/forecast");

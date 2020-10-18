@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
 html,
 body,
 .App {
@@ -5,32 +7,33 @@ body,
   height: 100%;
   width: 100%;
   flex-direction: column;
-  color: #7f7f7f;
+  color: #bbb;
+  font-family: 'Roboto Mono', sans-serif;
+  background:black;
+  margin:0;
+  padding:0;
 }
 .App {
-  font-family: sans-serif;
   text-align: center;
-  font-size: 14px;
   align-items: center;
 }
 
 div {
   display: flex;
+  white-space: pre;
 }
 
 .day-data {
   flex-direction: column;
-  background: pink;
+  background: #333;
   margin: 2px;
-  padding: 5px;
-  height: 100px;
-  width: 200px;
+  padding: 15px;
+  border-radius: 2px;
 }
 
 .time-data {
   flex-direction: row;
-  justify-content: space-between;
-  font-size: 13px;
+  justify-content: space-evenly;
 }
 
 .day-times {
@@ -40,12 +43,53 @@ div {
 
 .nowind {
   background: #bee2be;
+  color: #333;
 }
 
 .noswell {
   background: #e0ffe0;
+  color: #333;
 }
 
 .nowind.noswell {
   background: turquoise;
+}
+
+@media (max-width: 1920px) {
+  .App {
+    font-size: 30px;
+  }
+  .day-data {
+    width:520px;
+    height:120px;
+  }
+  .day-times { 
+    font-size:16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    font-size: 25px;
+  }
+  .day-data {
+    width:420px;
+    height:120px;
+  }
+  .day-times { 
+    font-size:16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    font-size: 16px;
+  }
+  .day-data {
+    width:100%;
+    height:120px;
+  }
+  .day-times { 
+    font-size:14px;
+  }
 }
