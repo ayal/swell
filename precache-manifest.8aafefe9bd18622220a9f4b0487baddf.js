@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90c5461d138abdb5dedde82185073b5f",
+    "revision": "8e3593e8d57f30a6d218f0fcdc626d7f",
     "url": "/swell/index.html"
   },
   {
-    "revision": "650db87f13c4ca72dcf1",
+    "revision": "77b01619941e710e3e7e",
     "url": "/swell/static/css/main.cf8925dc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/swell/static/js/2.1c77fb3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "650db87f13c4ca72dcf1",
-    "url": "/swell/static/js/main.ca7777ca.chunk.js"
+    "revision": "77b01619941e710e3e7e",
+    "url": "/swell/static/js/main.99e93180.chunk.js"
   },
   {
     "revision": "ed8dab84f2452e6107af",
