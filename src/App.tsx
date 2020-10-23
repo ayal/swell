@@ -66,8 +66,9 @@ const DayTimeData = ({ localTimestamp, wind, swell }: DayTime) => {
   const windclass = wind.speed < 10 ? "nowind" : "windy";
   const swellclass =
     swell.components.combined.height < 0.4 ? "noswell" : "swell";
+  const title = `wind: ${wind.speed} / swell: ${swell.components.combined.height}`;
   return (
-    <div className={`time-data ${windclass} ${swellclass}`}>
+    <div className={`time-data ${windclass} ${swellclass}`} title={title}>
       <div>{date.format("HH:mm")}</div>
       <div>{`Wind: ${windStr(wind.speed)}`}</div>
       <div>{`Swell: ${swellStr(swell.components.combined.height)}`}</div>
